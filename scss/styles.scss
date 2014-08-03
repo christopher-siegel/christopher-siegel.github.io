@@ -33,8 +33,8 @@
     }
 
     .main-nav {
-        @include column(5);
-        @include push(4); 
+        @include column(7);
+        @include push(2); 
 
         ul {
             // Main Nav Unordered List
@@ -198,6 +198,7 @@
                 float: left;
                 margin: 0 10px;
                 width: 80px;
+                cursor: pointer;
 
                 span {
                     width: 0; 
@@ -210,17 +211,26 @@
                     border-top: $url-buttons-size solid transparent;
                     border-bottom: $url-buttons-size solid transparent; 
                     border-right:$url-buttons-size solid $display-dark; 
+                    &:hover {
+                        border-right:$url-buttons-size solid $display-darker;
+                    }
                 }
                 .forward {
                     border-top: $url-buttons-size solid transparent;
                     border-bottom: $url-buttons-size solid transparent; 
                     border-left:$url-buttons-size solid $display-dark; 
+                    &:hover {
+                        border-left:$url-buttons-size solid $display-darker;
+                    }
                 }
                 .reload {
                     border: 6px solid $display-dark;
                     height: 19px;
                     width: 19px;
-                    border-radius:10px; 
+                    border-radius:10px;
+                    &:hover {
+                        border: 6px solid $display-darker;
+                    } 
                 }
             }
 
@@ -229,6 +239,10 @@
                 width: 75%;
                 margin-left: 100px;
                 background: $white;
+                cursor: text;
+                &:hover {
+                    background: $pure-white; 
+                }
             }
         }
 
@@ -239,6 +253,10 @@
             padding: 0 5px;
             color: $display-font;
             background: $display-dark;
+
+            @include breakpoint(mobile) {
+                font-size: 10px;
+            }
         }
 
         .screen-content {
@@ -303,6 +321,32 @@
             .text {
                 display: inline;
                 color: $display-font;
+            }
+
+            @include breakpoint(mobile) {
+                font-size: 10px;
+
+                .text {
+                    display: inline;
+                    float: left;
+                }
+
+                .line-1,
+                .line-2,
+                .line-3,
+                .line-4,
+                .line-5,
+                .line-6,
+                .line-7,
+                .line-8,
+                .line-9,
+                .line-10 {
+                    display: none;
+                }
+                .indent-1,
+                .indent-2 {
+                    margin-left: 0;
+                }
             }
         }
     }

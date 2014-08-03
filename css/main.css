@@ -642,9 +642,9 @@ a:visited {
   .menu .main-nav {
     display: inline;
     float: left;
-    width: 41.66667%;
+    width: 58.33333%;
     margin: 0 0%;
-    margin-left: 33.33333%; }
+    margin-left: 16.66667%; }
     .menu .main-nav ul {
       text-align: right; }
       .menu .main-nav ul li {
@@ -763,7 +763,8 @@ a:visited {
         *zoom: 1;
         float: left;
         margin: 0 10px;
-        width: 80px; }
+        width: 80px;
+        cursor: pointer; }
         .display .screen .url-bar .url-buttons:before, .display .screen .url-bar .url-buttons:after {
           content: "";
           display: table; }
@@ -778,20 +779,29 @@ a:visited {
           border-top: 10px solid transparent;
           border-bottom: 10px solid transparent;
           border-right: 10px solid #cfcfcf; }
+          .display .screen .url-bar .url-buttons .back:hover {
+            border-right: 10px solid #8e8e8e; }
         .display .screen .url-bar .url-buttons .forward {
           border-top: 10px solid transparent;
           border-bottom: 10px solid transparent;
           border-left: 10px solid #cfcfcf; }
+          .display .screen .url-bar .url-buttons .forward:hover {
+            border-left: 10px solid #8e8e8e; }
         .display .screen .url-bar .url-buttons .reload {
           border: 6px solid #cfcfcf;
           height: 19px;
           width: 19px;
           border-radius: 10px; }
+          .display .screen .url-bar .url-buttons .reload:hover {
+            border: 6px solid #8e8e8e; }
       .display .screen .url-bar .url {
         height: 23px;
         width: 75%;
         margin-left: 100px;
-        background: #fafafa; }
+        background: #fafafa;
+        cursor: text; }
+        .display .screen .url-bar .url:hover {
+          background: white; }
     .display .screen .code-lines {
       display: inline;
       float: left;
@@ -802,6 +812,9 @@ a:visited {
       padding: 0 5px;
       color: #5c5c5c;
       background: #cfcfcf; }
+      @media (max-width: 37.5em) {
+        .display .screen .code-lines {
+          font-size: 10px; } }
     .display .screen .screen-content {
       display: inline;
       float: left;
@@ -849,6 +862,26 @@ a:visited {
       .display .screen .screen-content .text {
         display: inline;
         color: #5c5c5c; }
+      @media (max-width: 37.5em) {
+        .display .screen .screen-content {
+          font-size: 10px; }
+          .display .screen .screen-content .text {
+            display: inline;
+            float: left; }
+          .display .screen .screen-content .line-1,
+          .display .screen .screen-content .line-2,
+          .display .screen .screen-content .line-3,
+          .display .screen .screen-content .line-4,
+          .display .screen .screen-content .line-5,
+          .display .screen .screen-content .line-6,
+          .display .screen .screen-content .line-7,
+          .display .screen .screen-content .line-8,
+          .display .screen .screen-content .line-9,
+          .display .screen .screen-content .line-10 {
+            display: none; }
+          .display .screen .screen-content .indent-1,
+          .display .screen .screen-content .indent-2 {
+            margin-left: 0; } }
   @media (max-width: 37.5em) {
     .display .display-outer-border {
       border-radius: 22px 22px 0 0;
