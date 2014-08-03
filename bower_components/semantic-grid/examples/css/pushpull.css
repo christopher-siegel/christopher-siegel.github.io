@@ -1,0 +1,38 @@
+@import url(../../stylesheets/reset.css);
+@import url(../../stylesheets/demo.css);
+body {
+  width: 100%;
+  *zoom: 1; }
+  body:before, body:after {
+    content: "";
+    display: table; }
+  body:after {
+    clear: both; }
+
+div.center {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+header#top {
+  display: inline;
+  float: left;
+  width: 97.91667%;
+  margin: 0 1.04167%;
+  margin-bottom: 1em; }
+
+#push {
+  display: inline;
+  float: left;
+  width: 64.58333%;
+  margin: 0 1.04167%;
+  margin-left: 34.375%;
+  margin-bottom: 1em; }
+
+#pull {
+  display: inline;
+  float: left;
+  width: 64.58333%;
+  margin: 0 1.04167%;
+  margin-right: 34.375%;
+  margin-bottom: 1em; }
