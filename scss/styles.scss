@@ -1,0 +1,341 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.meta {
+    @include column(12);
+    background: $blue-dark;
+    color: $blue-light;
+    height: 50px;
+    line-height: 50px;
+
+    span {
+        // catchphrase in meta nav
+        @include column(4);
+        @include push(8);
+        text-align: right;
+        font-size:10px;
+        font: 100 12px/50px  "Source Sans Pro";
+    }
+}
+
+.menu {
+    @include column(12);
+    background: $blue-light;
+    height: 105px;
+    line-height: 105px;
+
+    .logo {
+        @include column(3);
+        font: 32px "Adelle Basic";
+        color: $white;
+        line-height: 105px;
+    }
+
+    .main-nav {
+        @include column(5);
+        @include push(4); 
+
+        ul {
+            // Main Nav Unordered List
+            text-align: right;
+
+            li {
+                // Main Nav List Items
+                list-style: none;
+                text-align: right;
+                display: inline;
+
+                a {
+                    // Main Nav Links
+                    padding: 5px 15px;
+                    font: 16px "Adelle Basic", Arial, sans-serif;
+                    color: $white;
+                }
+
+                &:last-child {
+                    a {
+                        padding: 5px 0px 5px 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.display {
+    @include column(12);
+    background: $blue-middle;
+    height: 445px;
+    position: relative;
+
+    @include breakpoint(mobile) {
+        height: 200px;
+    }
+
+    &:before {
+        // push display-border down by 20%
+        // fixes issue with percent and margin-top
+        display: block;
+        content: "";
+        width: 100%;
+        height: 20%;
+    }
+    
+    // Display Outer Border Width
+    $display-outer-border : 16px;
+    // Display Inner Border Width
+    $display-inner-border : 35px;
+    // Display Border-Radius Width
+    $display-radius : 30px;
+    // Calculate Inner Border-Radius Width
+    $display-radius-outer : $display-radius + $display-outer-border;
+
+    .display-outer-border {
+        @include column(10);
+        @include push(1);
+        background: $grey-transparent;
+        height: 80%;
+        border-radius: $display-radius-outer $display-radius-outer 0 0;
+        padding: $display-outer-border $display-outer-border 0;
+    }
+
+    .display-border {
+        background: $grey-dark;
+        height: 100%;
+        border-radius: $display-radius $display-radius 0 0;
+        padding: $display-inner-border $display-inner-border 0;
+    }
+
+    .screen {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 5px 0 0;
+        background: $white;
+        overflow: hidden;
+
+        .top-bar {
+            width: 100%;
+            height: 35px;
+            border-radius: 5px 5px 0 0;
+            background: $display-dark;
+
+            @include breakpoint(mobile) {
+                height: 24px;
+            }
+
+            .tab {
+                border-bottom: 24px solid $display-light;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                height: 0;
+                padding: 11px 0 0 5px;
+                width: 25%;
+                float: left;
+                font-size: 12px;
+                line-height: 24px;
+                color: $display-font;
+
+                @include breakpoint(mobile) {
+                    border-bottom: 18px solid $display-light;
+                    padding: 6px 0 0 4px;
+                    width: 40%;
+                    line-height: 18px;
+                }
+            }
+
+            .window-buttons {
+                // Container for window buttons
+                @include clearfix;
+                float: left;
+                margin: 0 10px;
+
+                span {
+                    // window Buttons
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 12px;
+                    display: inline;
+                    float: left; 
+                    margin: 12px 4px;
+                    cursor: pointer;
+
+                    @include breakpoint(mobile) {
+                        width: 10px;
+                        height: 10px;
+                        margin: 7px 4px;
+                    }
+                }
+                .close {    
+                    background: $window-close;
+                    &:hover {
+                        background: $window-close-hover;
+                    }
+                }
+                .maximize {    
+                    background: $window-maximize;
+                    &:hover {
+                        background: $window-maximize-hover;
+                    }
+                }
+                .minimize {    
+                    background: $window-minimize;
+                    &:hover {
+                        background: $window-minimize-hover;
+                    }
+                }
+            }
+        }
+
+        .url-bar {
+            width: 100%;
+            height: 37px;
+            padding: 7px 0;
+            background: $display-light;
+
+            .url-buttons {
+                @include clearfix;
+                float: left;
+                margin: 0 10px;
+                width: 80px;
+
+                span {
+                    width: 0; 
+                    height: 0; 
+                    display: inline-block;
+                    margin: 1px 5px;
+                }
+
+                .back {
+                    border-top: $url-buttons-size solid transparent;
+                    border-bottom: $url-buttons-size solid transparent; 
+                    border-right:$url-buttons-size solid $display-dark; 
+                }
+                .forward {
+                    border-top: $url-buttons-size solid transparent;
+                    border-bottom: $url-buttons-size solid transparent; 
+                    border-left:$url-buttons-size solid $display-dark; 
+                }
+                .reload {
+                    border: 6px solid $display-dark;
+                    height: 19px;
+                    width: 19px;
+                    border-radius:10px; 
+                }
+            }
+
+            .url {
+                height: 23px;
+                width: 75%;
+                margin-left: 100px;
+                background: $white;
+            }
+        }
+
+        .code-lines {
+            @include column(1);
+            font-family: "Consolas", "Lucida Console", "Courier New", monospace;
+            text-align: right;
+            padding: 0 5px;
+            color: $display-font;
+            background: $display-dark;
+        }
+
+        .screen-content {
+            @include column(11);
+            font-family: "Consolas", "Lucida Console", "Courier New", monospace;
+            padding: 0 5px;
+
+            span {
+                color: $display-dark;
+            }
+            
+            .text-1, .text-2, .text-3 {
+                display: inline;
+                float: left;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .text-hide-1,
+            .text-hide-2,
+            .text-hide-3 {
+                position: absolute;
+                // top: -2px;
+                right: 0px;
+                background: $white;
+                border-left: .1em #666 solid;
+            }
+
+            .text-hide-1 {
+                -webkit-animation: type 5s steps(50, end);
+                animation: type 5s steps(50, end);
+            }
+
+            .text-hide-2 {
+                -webkit-animation: type 5s steps(50, end);
+                animation: type 5s steps(50, end);
+                animation-delay: 2s;
+            }
+            .text-hide-3 {
+                -webkit-animation: type 5s steps(50, end);
+                animation: type 5s steps(50, end);
+                animation-delay: 4s;
+            }
+
+            $indent : 30px;
+
+            .indent-1 {
+                margin-left: 30px;
+            }
+            .indent-2 {
+                margin-left: $indent * 2;
+            }
+            .highlight-red {
+                color: $highlight-red;
+            }
+            .highlight-blue {
+                color: $highlight-blue;
+            }
+            .highlight-yellow {
+                color: $highlight-yellow;
+            }
+            .text {
+                display: inline;
+                color: $display-font;
+            }
+        }
+    }
+
+    // reset Variables for mobile styles
+    // on mobile reduce border sizes and radius
+    $display-outer-border : 12px;
+    $display-inner-border : 20px;
+    $display-radius : 10px;
+    $display-radius-outer : $display-radius + $display-outer-border;
+
+    @include breakpoint(mobile) {
+        .display-outer-border {
+            border-radius: $display-radius-outer $display-radius-outer 0 0;
+            padding: $display-outer-border $display-outer-border 0;
+        }
+        .display-border {
+            border-radius: $display-radius $display-radius 0 0;
+            padding: $display-inner-border $display-inner-border 0;
+        }
+        .screen,
+        .top-bar {
+            border-radius: 3px 3px 0 0;
+        }
+    }
+}
+
+@keyframes type{
+    from { width: 100%; }
+    to { width: 0%; }
+}
+
+@-webkit-keyframes type{
+    from { width: 100%; }
+    to { width: 0%; }
+}
