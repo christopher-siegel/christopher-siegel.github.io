@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+header {
+    @include clearfix;
+}
+
 .meta {
     @include column(12);
     background: $blue-dark;
@@ -15,7 +19,7 @@
         @include push(8);
         text-align: right;
         font-size:10px;
-        font: 100 12px/50px  "Source Sans Pro";
+        font: 300 12px/50px  "Source Sans Pro";
     }
 }
 
@@ -255,7 +259,7 @@
             background: $display-dark;
 
             @include breakpoint(mobile) {
-                font-size: 10px;
+                font-size: 11px; 
             }
         }
 
@@ -265,49 +269,49 @@
             padding: 0 5px;
 
             span {
-                color: $display-dark;
+                color: $display-font;
             }
             
             .text-1, .text-2, .text-3 {
-                display: inline;
-                float: left;
-                overflow: hidden;
-                position: relative;
+                color: $display-font;
+                white-space:nowrap;
+                overflow:hidden;
+                border-right: 2px solid black;
+                -webkit-animation: type 2s steps(26, end), 
+                                    blink 1s step-end 0.5s;
+                -moz-animation: type 2s steps(26, end), 
+                                    blink 1s step-end 0.5s;
+                -webkit-animation-fill-mode:both;
+                -moz-animation-fill-mode:both;
             }
 
-            .text-hide-1,
-            .text-hide-2,
-            .text-hide-3 {
-                position: absolute;
-                // top: -2px;
-                right: 0px;
-                background: $white;
-                border-left: .1em #666 solid;
+            .text-2 {
+                -webkit-animation-delay:2s;
+                -moz-animation-delay:2s;
             }
 
-            .text-hide-1 {
-                -webkit-animation: type 5s steps(50, end);
-                animation: type 5s steps(50, end);
+            .text-3 {
+                -webkit-animation: type-last 2s steps(26, end), 
+                                    blink 1s step-end infinite;
+                -moz-animation: type-last 2s steps(26, end), 
+                                    blink 1s step-end infinite;
+                -webkit-animation-delay:4s;
+                -moz-animation-delay:4s;
+                -webkit-animation-fill-mode:both;
+                -moz-animation-fill-mode:both; 
             }
 
-            .text-hide-2 {
-                -webkit-animation: type 5s steps(50, end);
-                animation: type 5s steps(50, end);
-                animation-delay: 2s;
-            }
-            .text-hide-3 {
-                -webkit-animation: type 5s steps(50, end);
-                animation: type 5s steps(50, end);
-                animation-delay: 4s;
-            }
-
-            $indent : 30px;
+            
+            $indent : 5%;
 
             .indent-1 {
-                margin-left: 30px;
+                margin-left: $indent;
             }
             .indent-2 {
                 margin-left: $indent * 2;
+            }
+            .highlight-grey {
+                color: $display-dark;
             }
             .highlight-red {
                 color: $highlight-red;
@@ -318,29 +322,15 @@
             .highlight-yellow {
                 color: $highlight-yellow;
             }
-            .text {
-                display: inline;
-                color: $display-font;
-            }
 
             @include breakpoint(mobile) {
-                font-size: 10px;
+                font-size: 11px;
 
-                .text {
-                    display: inline;
-                    float: left;
-                }
-
-                .line-1,
-                .line-2,
-                .line-3,
-                .line-4,
-                .line-5,
-                .line-6,
-                .line-7,
-                .line-8,
-                .line-9,
-                .line-10 {
+                .line-1, .line-2,
+                .line-3, .line-4,
+                .line-5, .line-6,
+                .line-7, .line-8,
+                .line-9, .line-10 {
                     display: none;
                 }
                 .indent-1,
@@ -374,12 +364,212 @@
     }
 }
 
-@keyframes type{
-    from { width: 100%; }
-    to { width: 0%; }
+.main-content {
+    @include clearfix;
+    // padding: 65px 0;    
+
+    .services {
+       @include column(12);
+       // margin: 65px 0;
+       
+       .wrap {
+            @include breakpoint(mobile) {
+                padding: 0px 0px;
+                width: 100%;
+            } 
+       }
+       
+    }
+
+    .design-teaser,
+    .code-teaser,
+    .advance-teaser {
+        @include column(4);
+        @include breakpoint(mobile) {
+            @include column(12);
+            margin: 0 0 45px 0;
+
+            &:first-child {
+                margin: 45px 0;
+            }
+        }
+        text-align: center;
+        color: $grey-text;
+        margin: 65px 0;
+
+        p {
+            padding: 0px 24px;
+            font: 300 14px "Nunito";
+            @include breakpoint(mobile) {
+                padding: 0px 15%;
+            }
+        }
+
+        h2 {
+            font: 400 14px "Nunito";
+            text-transform: uppercase;
+        }
+    }
+
+    .design-orb-border,
+    .code-orb-border,
+    .advance-orb-border {
+        width: 122px + 2 * 9px;
+        height: 122px + 2 * 9px;
+        border-radius: 122px;
+        padding: 9px;
+        margin: 0 auto 35px auto;
+
+        @include breakpoint(mobile) {
+            border-radius: 0px;
+            width: 100%;
+
+            &:hover > .design-orb,
+            &:hover > .code-orb,
+            &:hover > .advance-orb, {
+                transition: all 0.3s;
+                border-radius: 0px;
+                width: 100%;
+            }
+        }
+    }
+
+    .design-orb-border {
+        background: $design-light-red;
+    }
+    .code-orb-border {
+        background: $design-light-blue;
+    }
+    .advance-orb-border {
+        background: $design-light-green;
+    }
+
+    .design-orb,
+    .code-orb,
+    .advance-orb {
+        width: 122px;
+        height: 122px;
+        margin: 0px auto;
+        border-radius: 122px;
+        transition: all 0.6s;
+        text-align: center; 
+        /* remove the gap between inline(-block) elements */
+        font: 1px/0 Arial, sans-serif; 
+
+        img {
+            display: inline-block;
+            vertical-align: middle; 
+            font: 16px/1 sans-serif;
+        }
+
+
+    }
+
+    .design-orb {
+        background: $design-red;
+    }
+
+    .code-orb {
+        background: $design-blue;
+    }
+
+    .advance-orb {
+        background: $design-green;
+    }
+
+    .design-orb:before,
+    .code-orb:before,
+    .advance-orb:before {    /* create a full-height inline block pseudo=element */
+        content: ' ';
+        display: inline-block;
+        vertical-align: middle;  /* vertical alignment of the inline element */
+        height: 100%;
+    }
+
+
+
 }
 
-@-webkit-keyframes type{
-    from { width: 100%; }
-    to { width: 0%; }
+
+
+@-webkit-keyframes type {
+    from { width: 0px; }
+    to { width:335px; }
+}
+
+@-moz-keyframes type {
+    from { width: 0; }
+    to { width:335px; }
+}
+
+@keyframes type {
+    from { width: 0; }
+    to { width:335px; }
+}
+
+@-webkit-keyframes type-last {
+    from { width: 0px; }
+    to { width:246px; }
+}
+
+@-moz-keyframes type-last {
+    from { width: 0; }
+    to { width:246px; }
+}
+
+@keyframes type-last {
+    from { width: 0; }
+    to { width:246px; }
+}
+
+@-webkit-keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+
+@include breakpoint(mobile) {
+    .hide-mobile {
+        display: none;
+    }
+
+    @-webkit-keyframes type {
+        from { width: 0px; }
+        to { width:235px; }
+    }
+
+    @-moz-keyframes type {
+        from { width: 0; }
+        to { width:235px; }
+    }
+
+    @keyframes type {
+        from { width: 0; }
+        to { width:235px; }
+    }
+
+    @-webkit-keyframes type-last {
+        from { width: 0px; }
+        to { width:150px; }
+    }
+
+    @-moz-keyframes type-last {
+        from { width: 0; }
+        to { width:150px; }
+    }
+
+    @keyframes type-last {
+        from { width: 0; }
+        to { width:150px; }
+    }
 }
