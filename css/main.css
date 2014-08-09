@@ -629,7 +629,7 @@ header {
     margin-left: 66.66667%;
     text-align: right;
     font-size: 10px;
-    font: 300 12px/50px  "Source Sans Pro"; }
+    font: 300 12px/50px "Source Sans Pro", sans-serif; }
 
 .menu {
   display: inline;
@@ -661,7 +661,7 @@ header {
         display: inline; }
         .menu .main-nav ul li a {
           padding: 5px 15px;
-          font: 16px "Adelle Basic", Arial, sans-serif;
+          font: 16px "Adelle Basic", serif;
           color: #fafafa; }
         .menu .main-nav ul li:last-child a {
           padding: 5px 0px 5px 15px; }
@@ -902,108 +902,168 @@ header {
       .main-content .services .wrap {
         padding: 0px 0px;
         width: 100%; } }
-  .main-content .design-teaser,
-  .main-content .code-teaser,
-  .main-content .advance-teaser {
-    display: inline;
-    float: left;
-    width: 33.33333%;
-    margin: 0 0%;
-    text-align: center;
-    color: #616161;
-    margin: 65px 0; }
-    @media (max-width: 37.5em) {
-      .main-content .design-teaser,
-      .main-content .code-teaser,
-      .main-content .advance-teaser {
-        display: inline;
-        float: left;
-        width: 100%;
-        margin: 0 0%;
-        margin: 0 0 45px 0; }
-        .main-content .design-teaser:first-child,
-        .main-content .code-teaser:first-child,
-        .main-content .advance-teaser:first-child {
-          margin: 45px 0; } }
-    .main-content .design-teaser p,
-    .main-content .code-teaser p,
-    .main-content .advance-teaser p {
-      padding: 0px 24px;
-      font: 300 14px "Nunito"; }
+    .main-content .services .wrap .teaser:hover > div {
+      -webkit-transition: width 0.6s;
+              transition: width 0.6s; }
       @media (max-width: 37.5em) {
-        .main-content .design-teaser p,
-        .main-content .code-teaser p,
-        .main-content .advance-teaser p {
-          padding: 0px 15%; } }
-    .main-content .design-teaser h2,
-    .main-content .code-teaser h2,
-    .main-content .advance-teaser h2 {
-      font: 400 14px "Nunito";
-      text-transform: uppercase; }
-  .main-content .design-orb-border,
-  .main-content .code-orb-border,
-  .main-content .advance-orb-border {
-    width: 140px;
-    height: 140px;
-    border-radius: 122px;
-    padding: 9px;
-    margin: 0 auto 35px auto; }
-    @media (max-width: 37.5em) {
-      .main-content .design-orb-border,
-      .main-content .code-orb-border,
-      .main-content .advance-orb-border {
-        border-radius: 0px;
-        width: 100%; }
-        .main-content .design-orb-border:hover > .design-orb, .main-content .design-orb-border:hover > .code-orb, .main-content .design-orb-border:hover > .advance-orb,
-        .main-content .code-orb-border:hover > .design-orb,
-        .main-content .code-orb-border:hover > .code-orb,
-        .main-content .code-orb-border:hover > .advance-orb,
-        .main-content .advance-orb-border:hover > .design-orb,
-        .main-content .advance-orb-border:hover > .code-orb,
-        .main-content .advance-orb-border:hover > .advance-orb {
-          -webkit-transition: all 0.3s;
-                  transition: all 0.3s;
-          border-radius: 0px;
+        .main-content .services .wrap .teaser:hover > div {
           width: 100%; } }
-  .main-content .design-orb-border {
-    background: #ec9aa5; }
-  .main-content .code-orb-border {
-    background: #86b9ff; }
-  .main-content .advance-orb-border {
-    background: #6edec8; }
-  .main-content .design-orb,
-  .main-content .code-orb,
-  .main-content .advance-orb {
-    width: 122px;
-    height: 122px;
-    margin: 0px auto;
-    border-radius: 122px;
-    -webkit-transition: all 0.6s;
-            transition: all 0.6s;
-    text-align: center;
-    /* remove the gap between inline(-block) elements */
-    font: 1px/0 Arial, sans-serif; }
-    .main-content .design-orb img,
-    .main-content .code-orb img,
-    .main-content .advance-orb img {
+      @media (min-width: 37.5em) {
+        .main-content .services .wrap .teaser:hover > div {
+          width: 170px; } }
+      @media (min-width: 64em) {
+        .main-content .services .wrap .teaser:hover > div {
+          width: 200px; } }
+    .main-content .services .design-teaser,
+    .main-content .services .code-teaser,
+    .main-content .services .advance-teaser {
+      display: inline;
+      float: left;
+      width: 33.33333%;
+      margin: 0 0%;
+      text-align: center;
+      color: #616161;
+      margin: 65px 0;
+      cursor: pointer; }
+      @media (max-width: 37.5em) {
+        .main-content .services .design-teaser,
+        .main-content .services .code-teaser,
+        .main-content .services .advance-teaser {
+          display: inline;
+          float: left;
+          width: 100%;
+          margin: 0 0%;
+          margin: 0 0 45px 0; }
+          .main-content .services .design-teaser:first-child,
+          .main-content .services .code-teaser:first-child,
+          .main-content .services .advance-teaser:first-child {
+            margin: 45px 0; } }
+      .main-content .services .design-teaser p,
+      .main-content .services .code-teaser p,
+      .main-content .services .advance-teaser p {
+        padding: 0px 24px;
+        font: 300 14px "Nunito", sans-serif; }
+        @media (max-width: 37.5em) {
+          .main-content .services .design-teaser p,
+          .main-content .services .code-teaser p,
+          .main-content .services .advance-teaser p {
+            padding: 0px 15%; } }
+      .main-content .services .design-teaser h2,
+      .main-content .services .code-teaser h2,
+      .main-content .services .advance-teaser h2 {
+        font: 400 14px "Nunito", sans-serif;
+        text-transform: uppercase; }
+    .main-content .services .design-orb-border,
+    .main-content .services .code-orb-border,
+    .main-content .services .advance-orb-border {
+      -webkit-transition: width 0.6s;
+              transition: width 0.6s;
+      width: 140px;
+      height: 140px;
+      border-radius: 122px;
+      padding: 9px;
+      margin: 0 auto 35px auto; }
+      @media (max-width: 37.5em) {
+        .main-content .services .design-orb-border,
+        .main-content .services .code-orb-border,
+        .main-content .services .advance-orb-border {
+          border-radius: 0px;
+          width: 100%; }
+          .main-content .services .design-orb-border:hover > .design-orb, .main-content .services .design-orb-border:hover > .code-orb, .main-content .services .design-orb-border:hover > .advance-orb,
+          .main-content .services .code-orb-border:hover > .design-orb,
+          .main-content .services .code-orb-border:hover > .code-orb,
+          .main-content .services .code-orb-border:hover > .advance-orb,
+          .main-content .services .advance-orb-border:hover > .design-orb,
+          .main-content .services .advance-orb-border:hover > .code-orb,
+          .main-content .services .advance-orb-border:hover > .advance-orb {
+            -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+            border-radius: 0px;
+            width: 100%; } }
+    .main-content .services .design-orb-border {
+      background: #ec9aa5; }
+    .main-content .services .code-orb-border {
+      background: #86b9ff; }
+    .main-content .services .advance-orb-border {
+      background: #6edec8; }
+    .main-content .services .design-orb,
+    .main-content .services .code-orb,
+    .main-content .services .advance-orb {
+      width: 122px;
+      height: 122px;
+      margin: 0px auto;
+      border-radius: 122px;
+      -webkit-transition: all 0.6s;
+              transition: all 0.6s;
+      text-align: center;
+      /* remove the gap between inline(-block) elements */
+      font: 1px/0 Arial, sans-serif; }
+      .main-content .services .design-orb img,
+      .main-content .services .code-orb img,
+      .main-content .services .advance-orb img {
+        display: inline-block;
+        vertical-align: middle;
+        font: 16px/1 sans-serif; }
+    .main-content .services .design-orb {
+      background: #e46f7f; }
+    .main-content .services .code-orb {
+      background: #529bff; }
+    .main-content .services .advance-orb {
+      background: #30d0b0; }
+    .main-content .services .design-orb:before,
+    .main-content .services .code-orb:before,
+    .main-content .services .advance-orb:before {
+      /* create a full-height inline block pseudo=element */
+      content: ' ';
       display: inline-block;
       vertical-align: middle;
-      font: 16px/1 sans-serif; }
-  .main-content .design-orb {
-    background: #e46f7f; }
-  .main-content .code-orb {
-    background: #529bff; }
-  .main-content .advance-orb {
-    background: #30d0b0; }
-  .main-content .design-orb:before,
-  .main-content .code-orb:before,
-  .main-content .advance-orb:before {
-    /* create a full-height inline block pseudo=element */
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle;
-    /* vertical alignment of the inline element */
-    height: 100%; }
+      /* vertical alignment of the inline element */
+      height: 100%; }
+  .main-content .image-banner {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 0%;
+    height: 210px;
+    width: 100%;
+    background: url("../img/city.png") 0% 65%;
+    position: relative; }
+    @media (max-width: 37.5em) {
+      .main-content .image-banner {
+        -webkit-background-size: initial initial;
+                background-size: initial; } }
+
+.btn {
+  height: 60px;
+  border: 3px solid #fafafa;
+  border-radius: 5px;
+  padding: 15px;
+  color: #fafafa;
+  font: 500 23px/23px "Source Sans Pro", sans-serif;
+  text-align: center; }
+
+.btn-blue,
+.btn-blue:visited {
+  color: #71adff;
+  border-color: #71adff;
+  -webkit-transition: color 0.3s, border-color 0.3s;
+          transition: color 0.3s, border-color 0.3s; }
+  .btn-blue:hover,
+  .btn-blue:visited:hover {
+    color: #fafafa;
+    border-color: #fafafa;
+    text-decoration: none;
+    -webkit-transition: color 0.3s, border-color 0.3s;
+            transition: color 0.3s, border-color 0.3s; }
+
+.btn-center {
+  width: 220px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
 
 @-webkit-keyframes type {
   from {

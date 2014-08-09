@@ -6,6 +6,8 @@ header {
     @include clearfix;
 }
 
+
+
 .meta {
     @include column(12);
     background: $blue-dark;
@@ -19,7 +21,7 @@ header {
         @include push(8);
         text-align: right;
         font-size:10px;
-        font: 300 12px/50px  "Source Sans Pro";
+        font: 300 12px/50px $SourceSansPro;
     }
 }
 
@@ -53,7 +55,7 @@ header {
                 a {
                     // Main Nav Links
                     padding: 5px 15px;
-                    font: 16px "Adelle Basic", Arial, sans-serif;
+                    font: 16px $AdelleBasic;
                     color: $white;
                 }
 
@@ -252,7 +254,7 @@ header {
 
         .code-lines {
             @include column(1);
-            font-family: "Consolas", "Lucida Console", "Courier New", monospace;
+            font-family: $Consolas;
             text-align: right;
             padding: 0 5px;
             color: $display-font;
@@ -265,7 +267,7 @@ header {
 
         .screen-content {
             @include column(11);
-            font-family: "Consolas", "Lucida Console", "Courier New", monospace;
+            font-family: $Consolas;
             padding: 0 5px;
 
             span {
@@ -301,7 +303,6 @@ header {
                 -moz-animation-fill-mode:both; 
             }
 
-            
             $indent : 5%;
 
             .indent-1 {
@@ -369,128 +370,202 @@ header {
     // padding: 65px 0;    
 
     .services {
-       @include column(12);
-       // margin: 65px 0;
+        @include column(12);
+        // margin: 65px 0;
        
-       .wrap {
+        .wrap {
             @include breakpoint(mobile) {
                 padding: 0px 0px;
                 width: 100%;
             } 
-       }
+            
+            .teaser {
+
+                &:hover {
+                    > div {
+                        transition: width 0.6s;
+                        @include breakpoint(mobile) {
+                            width: 100%;
+                        }
+                        @include breakpoint(phablet) {
+                            width: 170px;
+                        }
+                        @include breakpoint(laptop) {
+                            width: 200px;
+                        }
+                    }
+                }
+
+            }
+        }
        
-    }
+        // .design-teaser:hover > .design-orb-border,
+        // .code-teaser:hover > .code-orb-border,
+        // .advance-teaser:hover > .advance-orb-border {
+        //         width: 200px;
+        //         transition: width 0.6s;
 
-    .design-teaser,
-    .code-teaser,
-    .advance-teaser {
-        @include column(4);
-        @include breakpoint(mobile) {
-            @include column(12);
-            margin: 0 0 45px 0;
+        //         @include breakpoint(mobile) {
+        //             width: 100%;
+        //         }
+        // }
 
-            &:first-child {
-                margin: 45px 0;
-            }
-        }
-        text-align: center;
-        color: $grey-text;
-        margin: 65px 0;
-
-        p {
-            padding: 0px 24px;
-            font: 300 14px "Nunito";
+        .design-teaser,
+        .code-teaser,
+        .advance-teaser {
+            @include column(4);
             @include breakpoint(mobile) {
-                padding: 0px 15%;
+                @include column(12);
+                margin: 0 0 45px 0;
+
+                &:first-child {
+                    margin: 45px 0;
+                }
+            }
+            text-align: center;
+            color: $grey-text;
+            margin: 65px 0;
+            cursor: pointer;
+
+            p {
+                padding: 0px 24px;
+                font: 300 14px $Nunito;
+                @include breakpoint(mobile) {
+                    padding: 0px 15%;
+                }
+            }
+
+            h2 {
+                font: 400 14px $Nunito;
+                text-transform: uppercase;
             }
         }
 
-        h2 {
-            font: 400 14px "Nunito";
-            text-transform: uppercase;
-        }
-    }
+        .design-orb-border,
+        .code-orb-border,
+        .advance-orb-border {
+            transition: width 0.6s;
+            width: 122px + 2 * 9px;
+            height: 122px + 2 * 9px;
+            border-radius: 122px;
+            padding: 9px;
+            margin: 0 auto 35px auto;
 
-    .design-orb-border,
-    .code-orb-border,
-    .advance-orb-border {
-        width: 122px + 2 * 9px;
-        height: 122px + 2 * 9px;
-        border-radius: 122px;
-        padding: 9px;
-        margin: 0 auto 35px auto;
-
-        @include breakpoint(mobile) {
-            border-radius: 0px;
-            width: 100%;
-
-            &:hover > .design-orb,
-            &:hover > .code-orb,
-            &:hover > .advance-orb, {
-                transition: all 0.3s;
+            @include breakpoint(mobile) {
                 border-radius: 0px;
                 width: 100%;
+
+                &:hover > .design-orb,
+                &:hover > .code-orb,
+                &:hover > .advance-orb, {
+                    transition: all 0.3s;
+                    border-radius: 0px;
+                    width: 100%;
+                }
             }
         }
-    }
 
-    .design-orb-border {
-        background: $design-light-red;
-    }
-    .code-orb-border {
-        background: $design-light-blue;
-    }
-    .advance-orb-border {
-        background: $design-light-green;
-    }
-
-    .design-orb,
-    .code-orb,
-    .advance-orb {
-        width: 122px;
-        height: 122px;
-        margin: 0px auto;
-        border-radius: 122px;
-        transition: all 0.6s;
-        text-align: center; 
-        /* remove the gap between inline(-block) elements */
-        font: 1px/0 Arial, sans-serif; 
-
-        img {
-            display: inline-block;
-            vertical-align: middle; 
-            font: 16px/1 sans-serif;
+        .design-orb-border {
+            background: $design-light-red;
+        }
+        .code-orb-border {
+            background: $design-light-blue;
+        }
+        .advance-orb-border {
+            background: $design-light-green;
         }
 
+        .design-orb,
+        .code-orb,
+        .advance-orb {
+            width: 122px;
+            height: 122px;
+            margin: 0px auto;
+            border-radius: 122px;
+            transition: all 0.6s;
+            text-align: center; 
+            /* remove the gap between inline(-block) elements */
+            font: 1px/0 Arial, sans-serif; 
 
+            img {
+                display: inline-block;
+                vertical-align: middle; 
+                font: 16px/1 sans-serif;
+            }
+
+
+        }
+
+        .design-orb {
+            background: $design-red;
+        }
+
+        .code-orb {
+            background: $design-blue;
+        }
+
+        .advance-orb {
+            background: $design-green;
+        }
+
+        .design-orb:before,
+        .code-orb:before,
+        .advance-orb:before {    /* create a full-height inline block pseudo=element */
+            content: ' ';
+            display: inline-block;
+            vertical-align: middle;  /* vertical alignment of the inline element */
+            height: 100%;
+        }
     }
 
-    .design-orb {
-        background: $design-red;
+    .image-banner {
+        @include column(12);
+        height: 210px;
+        width: 100%;
+        background: url('../img/city.png') 0% 65%;
+        // background-size: cover;
+        position: relative;
+
+        @include breakpoint(mobile) {
+            background-size: initial;
+        }
     }
-
-    .code-orb {
-        background: $design-blue;
-    }
-
-    .advance-orb {
-        background: $design-green;
-    }
-
-    .design-orb:before,
-    .code-orb:before,
-    .advance-orb:before {    /* create a full-height inline block pseudo=element */
-        content: ' ';
-        display: inline-block;
-        vertical-align: middle;  /* vertical alignment of the inline element */
-        height: 100%;
-    }
-
-
 
 }
 
+.btn {
+    height: 60px;
+    border: 3px solid $white;
+    border-radius: 5px;
+    padding: 15px;
+    color: $white;
+    font: 500 23px/23px $SourceSansPro;
+    text-align: center;
+}
 
+.btn-blue,
+.btn-blue:visited {
+    color: $blue-light;
+    border-color: $blue-light;
+    transition: color 0.3s, border-color 0.3s;
+
+    &:hover {
+        color: $white;
+        border-color: $white;
+        text-decoration: none;
+        transition: color 0.3s, border-color 0.3s;
+    }
+}
+
+.btn-center {
+    width: 220px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
 
 @-webkit-keyframes type {
     from { width: 0px; }

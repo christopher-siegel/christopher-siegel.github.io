@@ -1668,6 +1668,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/img\/city.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 654441,
+		"inputAbbreviatedPath": "\/_site\/img\/city.png",
+		"outputAbbreviatedPath": "\/_site\/img\/city.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/img\/code.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1675,6 +1686,28 @@
 		"initialSize": 1917,
 		"inputAbbreviatedPath": "\/_site\/img\/code.png",
 		"outputAbbreviatedPath": "\/_site\/img\/code.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/drop.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1974,
+		"inputAbbreviatedPath": "\/_site\/img\/drop.png",
+		"outputAbbreviatedPath": "\/_site\/img\/drop.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/lightbulb.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1903,
+		"inputAbbreviatedPath": "\/_site\/img\/lightbulb.png",
+		"outputAbbreviatedPath": "\/_site\/img\/lightbulb.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3407,6 +3440,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/img\/city.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 785912,
+		"inputAbbreviatedPath": "\/img\/city.png",
+		"outputAbbreviatedPath": "\/img\/city.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/img\/code.png": {
 		"fileType": 32768,
