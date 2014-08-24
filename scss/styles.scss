@@ -13,6 +13,10 @@ h3 {
     margin-bottom: 25px;
 }
 
+.username {
+    margin: 0 7px 0 0;
+}
+
 .meta-bar {
     @include column(12);
     background: $blue-dark;
@@ -37,11 +41,25 @@ h3 {
     background: $blue-light;
     height: 105px;
 
-    .logo {
-        @include column(3);
+    .logo,
+    .logo a {
         font: 32px $AdelleBasic;
         color: $white;
         line-height: 105px;
+        text-decoration: none;
+        display: inline-block;
+        float: left;
+        
+        &:before {
+            content: " ";
+            background: $blue-light;
+            width: 18px;
+            height: 9px;
+            position: absolute;
+            top: 35px;
+            display: block;
+        }
+        
     }
 
     .main-nav {
@@ -59,15 +77,20 @@ h3 {
 
                 a {
                     // Main Nav Links
-                    padding: 5px 15px;
+                    padding: 7px 15px;
                     font: 700 20px/105px $Lato;
                     color: $white;
-                    transition: background 0.4s;
+//                    transition: border 0.4s;
+//                    border-bottom: 3px solid $blue-light;
+//                    border-top: 32px solid $blue-light;
 
+                    &.active,
                     &:hover {
                         text-decoration: none;
-                        background: $blue-middle;
-                        transition: background 0.4s;
+//                        background: $blue-middle;
+                        border-bottom: 3px solid $blue-middle;
+//                        border-top: 3px solid $blue-middle;
+//                        transition: border 0.4s;
                     }
                 }
 
@@ -75,6 +98,50 @@ h3 {
             }
         }
     }
+}
+
+.hero-intro {
+    background: $blue-middle;
+    padding: 50px 5%;
+    text-align: center;
+    
+    h1 {
+        font: 49px $AdelleBasic;
+        color: $blue-dark;
+    }
+}
+
+.blog-post {
+    @include column(12);
+    position: relative;
+    padding: 100px 5%;
+    transition: background 0.3s;
+
+    &:hover {
+        background: rgba(0,0,0,0.01);   
+        transition: background 0.3s;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    h2, 
+    h2 a {
+        margin: 0 0 7px 0;
+
+        font: 700 24px/1.2 $Lato;
+        color: $blue-dark;
+        text-transform: uppercase;
+    }
+
+    p {
+        font: 300 16px/1.5 $Nunito;
+        color: $grey-text;
+    }
+
+    &.highlighted {
+        background: $blue-light;
+    }
+
 }
 
 .display {
@@ -747,6 +814,7 @@ h3 {
 .more-work {
     @include column(12);
     @include clearfix;
+    margin-bottom: 30px;
 
     a {
         display: inline-block;
@@ -804,6 +872,24 @@ h3 {
         }
     }
 }
+
+
+.about-text {
+    padding: 60px 5%;    
+
+    p {
+        font: 300 16px/1.5 $Nunito;
+        color: $grey-text;
+    }
+    
+    h2 {
+        margin: 0 0 7px 0;
+        font: 700 24px/1.2 $Lato;
+        color: $blue-dark;
+        text-transform: uppercase;
+    }
+}
+
 
 
 .site-footer {

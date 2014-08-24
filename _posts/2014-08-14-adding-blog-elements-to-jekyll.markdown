@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "HTML Slider using only CSS"
+title:  "Adding Blog Elements to Jekyll"
 date:   2014-08-02 19:32:03
 categories: jekyll update
 ---

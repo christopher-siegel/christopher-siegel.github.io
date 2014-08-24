@@ -1,0 +1,31 @@
+<header role="header" class="header">
+    <div class="meta-bar">
+        <div class="wrap">
+            <span>christopher siegel - web design & front-end development</span>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="wrap">
+            <div class="logo">
+                <!-- <img src="img/logo.png" alt="siegel" title="back to the homepage"> -->
+                <a href="/">Siegel</a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    {% assign sorted_pages = site.pages | sort:"sort" %}
+                    {% for node in sorted_pages %}
+                        {% if node.layout != 'none' and node.sort %}
+                            {% if page.url == node.url %}
+                                <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+                            {% else %}
+                                <li><a href="{{node.url}}">{{node.title}}</a></li>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
