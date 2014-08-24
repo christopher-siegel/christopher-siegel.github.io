@@ -3,7 +3,7 @@ layout: default
 ---
 
 <header role="header" class="header">
-    <div class="meta">
+    <div class="meta-bar">
         <div class="wrap">
             <span>christopher siegel - web design & front-end development</span>
         </div>
@@ -20,7 +20,7 @@ layout: default
                 <ul>
                     <li><a href="#">about</a></li>
                     <li><a href="#">work</a></li>
-                    <li><a href="#">blog</a></li>
+                    <li><a href="/blog">blog</a></li>
                     <li><a href="#">contact</a></li>
                 </ul>
             </nav>
@@ -78,7 +78,7 @@ layout: default
 </header>
 
 <div class="main-content">
-    <div class="services">
+    <section class="services">
         <div class="wrap">
             <div class="design-teaser teaser">
                 <div class="design-orb-border">
@@ -110,11 +110,102 @@ layout: default
                 <p>I help to define your identiy and brand, optimize your usability and capture your audience.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="image-banner">
-        <a href="/about" class="btn btn-blue btn-center">get in touch</a>
-    </div>
+    <section class="image-banner">
+        <a href="/about" class="btn btn-center">get in touch</a>
+    </section>
+
+    <section class="spotlight" id="spotlight-anchor">
+        <div class="wrap">
+            <ol class="spotlight-content">
+                <input type="radio" name="slides" id="slide-1" checked>
+                <li class="slide">
+                    <div class="slide-content">
+                        <h3>Capturing the essence of yoga in a leaflet</h3>
+                        <p>
+                            <blockquote>„I was amazed how you used just the right photos to really capture what yoga is all about!“ – Maruma</blockquote>
+                            <br>
+                            Read about how I helped Maruma to reinforce her brand and build a new corporate identity around leaflets, business cards and event inlays.
+                        </p>
+                        <br>
+                        <a href="/about" class="btn btn-blue">read casestudy</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="img/work/maruma-flyer.jpg" alt="Picture of a flyer for marumas yogo classes">
+                    </div>
+                </li>
+                <input type="radio" name="slides" id="slide-2">
+                <li class="slide">
+                    <div class="slide-content">
+                        <h3>Writing really strange headlines</h3>
+                        <p>
+                            <blockquote>„Christopher really had it going with those strange headlines when he created out branding. It was great!“ – That Guy</blockquote>
+                            <br>
+                            Read about how I helped Maruma to reinforce her brand and build a new corporate identity around leaflets, business cards and event inlays.
+                        </p>
+                        <br>
+                        <a href="/about" class="btn btn-blue">read casestudy</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="img/work/maruma-flyer.jpg" alt="Picture of a flyer for marumas yogo classes">
+                    </div>    
+                </li>
+                <input type="radio" name="slides" id="slide-3">
+                <li class="slide">
+                    <div class="slide-content">
+                        <h3>Conquering the world within a couple of months</h3>
+                        <p>
+                            <blockquote>„He really managed to conquer the world in 67 days but failed to realise it was all just a dream - just a dream.“ – Realist</blockquote>
+                            <br>
+                            Read about how I conquered the world in my dreams and how that changed everything.
+                        </p>
+                        <br>
+                        <a href="/about" class="btn btn-blue">read casestudy</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="img/work/maruma-flyer.jpg" alt="Picture of a flyer for marumas yogo classes">
+                    </div>  
+                </li>
+                <input type="radio" name="slides" id="slide-4">
+                <li class="slide">
+                    <div class="slide-content">
+                        <h3>Capturing the essence of yoga in a leaflet</h3>
+                        <p>
+                            <blockquote>„I was amazed how you used just the right photos to really capture what yoga is all about!“ – Maruma</blockquote>
+                            <br>
+                            Read about how I helped Maruma to reinforce her brand and build a new corporate identity around leaflets, business cards and event inlays.
+                        </p>
+                        <br>
+                        <a href="/about" class="btn btn-blue">read casestudy</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="img/work/maruma-flyer.jpg" alt="Picture of a flyer for marumas yogo classes">
+                    </div>  
+                </li>
+            
+                <ol class="spotlight-nav">
+                    <li><label for="slide-1" class="slide-1 active">&#8226;</label></li>
+                    <li><label for="slide-2" class="slide-2">&#8226;</label></li>
+                    <li><label for="slide-3" class="slide-3">&#8226;</label></li>
+                    <li><label for="slide-4" class="slide-4">&#8226;</label></li>
+                </ol>
+            </ol>
+        </div>
+    </section>
+
+    <section class="more-work">
+        <div class="wrap">
+            <h3>More Work</h3>
+                
+            <a href="#"><img src="img/work/siegel-teaser.png"></a>
+            <a href="#"><img src="img/work/listorize-teaser.png"></a>
+            <a href="#"><img src="img/work/transportgruen-teaser.png"></a>
+
+        </div>
+    </section>
+
+   
 
 
 </div>
