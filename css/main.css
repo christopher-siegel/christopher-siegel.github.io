@@ -714,7 +714,9 @@ h3 {
   margin: 0 0%;
   background: #529bff;
   height: 445px;
-  position: relative; }
+  position: relative;
+  -webkit-box-shadow: 0px -20px 25px -25px rgba(0, 0, 0, 0.25) inset;
+          box-shadow: 0px -20px 25px -25px rgba(0, 0, 0, 0.25) inset; }
   @media (max-width: 37.5em) {
     .display {
       height: 200px; } }
@@ -1412,3 +1414,73 @@ h3 {
 
     to {
       width: 150px; } } }
+.work-example {
+  color: #fafafa;
+  font: 300 16px/1.5 "Nunito", sans-serif; }
+  .work-example h1,
+  .work-example h2 {
+    color: #fafafa;
+    text-transform: uppercase; }
+  .work-example h1 {
+    font: 700 42px/1.2 "Lato", sans-serif;
+    margin: 0 0 15px 0; }
+  .work-example h2 {
+    font: 400 20px/1.2 "Lato", sans-serif;
+    margin: 0 0 7px 0; }
+  .work-example .work-services i {
+    width: 30px; }
+  .work-example.maruma-bg {
+    background: url("../img/work/maruma-bg.jpg") #d5641c center top no-repeat;
+    min-height: 850px; }
+    .work-example.maruma-bg p {
+      width: 37%; }
+    .work-example.maruma-bg .wrap {
+      padding: 13% 30px; }
+    @media (max-width: 37.5em) {
+      .work-example.maruma-bg {
+        min-height: 300px;
+        background-position: 58% -155px; }
+        .work-example.maruma-bg p {
+          width: 90%; }
+        .work-example.maruma-bg .wrap {
+          padding: 595px 30px 80px 30px; } }
+  .work-example.siegel-bg {
+    background: url("../img/work/siegel-bg.jpg") #3842d7 center top no-repeat;
+    min-height: 850px; }
+    .work-example.siegel-bg .push-right {
+      width: 48%;
+      float: right; }
+    @media (min-width: 64em) {
+      .work-example.siegel-bg h1 {
+        font-size: 35px; } }
+    @media (min-width: 50em) {
+      .work-example.siegel-bg h1 {
+        font-size: 35px; } }
+    @media (min-width: 37.5em) {
+      .work-example.siegel-bg h1 {
+        font-size: 30px; } }
+    @media (max-width: 37.5em) {
+      .work-example.siegel-bg h1 {
+        font-size: 30px; } }
+    .work-example.siegel-bg .wrap {
+      padding: 7% 30px; }
+    .work-example.siegel-bg p {
+      width: 75%; }
+    .work-example.siegel-bg .browser-image {
+      float: left;
+      width: 48%; }
+    @media (max-width: 37.5em) {
+      .work-example.siegel-bg {
+        min-height: 300px;
+        background-position: 37% 0px; }
+        .work-example.siegel-bg .push-right {
+          width: 90%;
+          float: none; }
+        .work-example.siegel-bg .browser-image {
+          float: none;
+          width: 100%;
+          margin-bottom: 10%; }
+        .work-example.siegel-bg p {
+          width: 100%; }
+        .work-example.siegel-bg .wrap {
+          padding: 100px 30px 80px 30px; } }
