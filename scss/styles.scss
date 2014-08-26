@@ -1095,14 +1095,13 @@ h3 {
 
     &.maruma-bg {
         background: url("../img/work/maruma-bg2.jpg") rgb(213,100,28) center top no-repeat;
-//        min-height: 850px;
-        
+
         p {
             width: 37%; 
         }
         
         .wrap {
-            padding: 13% 30px;
+            padding: 13% 30px 10% 30px;
         }
         
         @include breakpoint(mobile) {
@@ -1156,11 +1155,12 @@ h3 {
                 display: none;
             }
         }
-            
-    }    
+    } 
+
     
     &.siegel-bg,
-    &.grischuna-bg {
+    &.grischuna-bg,
+    &.transportgruen-bg {
 //        min-height: 850px;
         
         .push-right {
@@ -1205,7 +1205,7 @@ h3 {
             
             .push-right,
             .push-left {
-                width: 90%;
+                width: 100%;
                 float: none;
             }
             
@@ -1221,6 +1221,31 @@ h3 {
             
             .wrap {
                 padding: 100px 30px 80px 30px;
+            }
+        }
+    }
+    
+    &.grischuna-bg {
+        h1 {
+            font: 700 42px/1.2 $Lato;
+            margin: 0 0 15px 0;
+        }
+    }
+        
+    &.transportgruen-bg {
+        background: url("../img/work/transportgruen-bg.jpg") #548512 center top no-repeat;
+        
+        h1 {
+            font: 700 42px/1.2 $Lato;
+            margin: 0 0 15px 0;
+        }
+        
+        @include breakpoint(mobile) {
+            min-height: 300px;
+            background-position: 19% -100px;
+            
+            .wrap {
+                padding: 430px 30px 80px 30px;
             }
         }
     }
