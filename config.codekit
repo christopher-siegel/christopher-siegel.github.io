@@ -1763,6 +1763,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_site\/img\/work\/maruma-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 902510,
+		"inputAbbreviatedPath": "\/_site\/img\/work\/maruma-bg.png",
+		"outputAbbreviatedPath": "\/_site\/img\/work\/maruma-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/work\/maruma-bg2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 433268,
+		"inputAbbreviatedPath": "\/_site\/img\/work\/maruma-bg2.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/work\/maruma-bg2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/img\/work\/maruma-flyer.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1785,13 +1807,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_site\/img\/work\/siegel-browser.jpg": {
+	"\/_site\/img\/work\/siegel-bg2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 96304,
-		"inputAbbreviatedPath": "\/_site\/img\/work\/siegel-browser.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/work\/siegel-browser.jpg",
+		"initialSize": 785624,
+		"inputAbbreviatedPath": "\/_site\/img\/work\/siegel-bg2.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/work\/siegel-bg2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3693,6 +3715,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/work\/maruma-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.10455e+06,
+		"inputAbbreviatedPath": "\/img\/work\/maruma-bg.png",
+		"outputAbbreviatedPath": "\/img\/work\/maruma-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/work\/maruma-bg2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 433268,
+		"inputAbbreviatedPath": "\/img\/work\/maruma-bg2.jpg",
+		"outputAbbreviatedPath": "\/img\/work\/maruma-bg2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/img\/work\/maruma-flyer.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3715,13 +3759,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/work\/siegel-browser.jpg": {
+	"\/img\/work\/siegel-bg2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 96304,
-		"inputAbbreviatedPath": "\/img\/work\/siegel-browser.jpg",
-		"outputAbbreviatedPath": "\/img\/work\/siegel-browser.jpg",
+		"initialSize": 706844,
+		"inputAbbreviatedPath": "\/img\/work\/siegel-bg2.jpg",
+		"outputAbbreviatedPath": "\/img\/work\/siegel-bg2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

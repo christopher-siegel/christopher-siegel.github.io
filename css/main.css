@@ -1416,6 +1416,7 @@ h3 {
       width: 150px; } } }
 .work-example {
   color: #fafafa;
+  border-top: 1px solid #fafafa;
   font: 300 16px/1.5 "Nunito", sans-serif; }
   .work-example h1,
   .work-example h2 {
@@ -1430,7 +1431,7 @@ h3 {
   .work-example .work-services i {
     width: 30px; }
   .work-example.maruma-bg {
-    background: url("../img/work/maruma-bg.jpg") #d5641c center top no-repeat;
+    background: url("../img/work/maruma-bg2.jpg") #d5641c center top no-repeat;
     min-height: 850px; }
     .work-example.maruma-bg p {
       width: 37%; }
@@ -1439,13 +1440,13 @@ h3 {
     @media (max-width: 37.5em) {
       .work-example.maruma-bg {
         min-height: 300px;
-        background-position: 58% -155px; }
+        background-position: 70% -95px; }
         .work-example.maruma-bg p {
           width: 90%; }
         .work-example.maruma-bg .wrap {
-          padding: 595px 30px 80px 30px; } }
+          padding: 500px 30px 80px 30px; } }
   .work-example.siegel-bg {
-    background: url("../img/work/siegel-bg.jpg") #3842d7 center top no-repeat;
+    background: url("../img/work/siegel-bg2.jpg") #3461de center top no-repeat;
     min-height: 850px; }
     .work-example.siegel-bg .push-right {
       width: 48%;

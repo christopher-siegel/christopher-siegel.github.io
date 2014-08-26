@@ -1066,6 +1066,7 @@ h3 {
 
 .work-example {
     color: $white;
+    border-top: 1px solid $white;
     font: 300 16px/1.5 $Nunito;
     
     h1,
@@ -1090,7 +1091,7 @@ h3 {
     
 
     &.maruma-bg {
-        background: url("../img/work/maruma-bg.jpg") rgb(213,100,28) center top no-repeat;
+        background: url("../img/work/maruma-bg2.jpg") rgb(213,100,28) center top no-repeat;
         min-height: 850px;
         
         p {
@@ -1103,20 +1104,20 @@ h3 {
         
         @include breakpoint(mobile) {
             min-height: 300px;
-            background-position: 58% -155px;
+            background-position: 70% -95px;
             
             p {
                 width: 90%;
             }
             
             .wrap {
-                padding: 595px 30px 80px 30px;
+                padding: 500px 30px 80px 30px;
             }
         }
     }
     
     &.siegel-bg {
-        background: url("../img/work/siegel-bg.jpg") rgb(56,66,215) center top no-repeat;
+        background: url("../img/work/siegel-bg2.jpg") #3461de center top no-repeat;
         min-height: 850px;
         
         .push-right {
@@ -1179,4 +1180,6 @@ h3 {
     
 }
 
+//TODO: Hintergrundbilder verbessern (rand weg und dafür bg color)
+//TODO: Bilder responsive machen
 
