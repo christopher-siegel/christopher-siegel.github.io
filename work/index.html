@@ -9,12 +9,14 @@ permalink: /work/
     <h1>work</h1>    
 </div>
 
-{% for work in site.pages limit:10 %}
-    {% if work.layout == 'work' %}  
-        
-        
-                {{work.content}}
+<div class="work-showcase">
+    {% for work in site.pages limit:10 %}
+        {% if work.layout == 'work' %}  
 
 
-    {% endif %}
-{% endfor %}
+                    {{work.content}}
+
+
+        {% endif %}
+    {% endfor %}
+</div>

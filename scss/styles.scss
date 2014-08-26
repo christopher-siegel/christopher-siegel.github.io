@@ -1063,6 +1063,9 @@ h3 {
 }
 
 
+.work-showcase {
+    border-bottom: 1px solid $white;
+}
 
 .work-example {
     color: $white;
@@ -1092,7 +1095,7 @@ h3 {
 
     &.maruma-bg {
         background: url("../img/work/maruma-bg2.jpg") rgb(213,100,28) center top no-repeat;
-        min-height: 850px;
+//        min-height: 850px;
         
         p {
             width: 37%; 
@@ -1115,15 +1118,61 @@ h3 {
             }
         }
     }
-    
+
     &.siegel-bg {
         background: url("../img/work/siegel-bg2.jpg") #3461de center top no-repeat;
-        min-height: 850px;
+        
+        .browser-image {
+            float: left;
+            width: 48%;
+        }
+    }
+    
+    &.grischuna-bg {
+        background: url("../img/work/grischuna-bg.jpg") #7b0e1e center top no-repeat;
+
+        .browser-image {
+            float: right;
+            width: 48%;
+            position: relative;
+            display: block;
+            
+            img {
+                &:first-child {
+                    width: 100%;
+                }
+                &:last-child {
+                    width: 45%;
+                }
+            }
+        }
+        
+        .browser-popout {
+            position: absolute;
+            right: -7%;
+            bottom: -27%;
+            
+            @include breakpoint(mobile) {
+                display: none;
+            }
+        }
+            
+    }    
+    
+    &.siegel-bg,
+    &.grischuna-bg {
+//        min-height: 850px;
         
         .push-right {
             width: 48%;
             float: right;
         }
+        
+        .push-left {
+            width: 51%;
+            float: left;
+        }
+        
         
         h1 {
             @include breakpoint(laptop) {
@@ -1141,23 +1190,21 @@ h3 {
         }
 
         .wrap {
-            padding: 7% 30px;
+            padding: 7% 30px 9% 30px;
         }
         
         p {
             width: 75%;
         }
         
-        .browser-image {
-            float: left;
-            width: 48%;
-        }
+        
         
         @include breakpoint(mobile) {
             min-height: 300px;
             background-position: 37% 0px;
             
-            .push-right {
+            .push-right,
+            .push-left {
                 width: 90%;
                 float: none;
             }
@@ -1178,6 +1225,7 @@ h3 {
         }
     }
     
+
 }
 
 //TODO: Hintergrundbilder verbessern (rand weg und dafür bg color)

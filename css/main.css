@@ -1414,6 +1414,9 @@ h3 {
 
     to {
       width: 150px; } } }
+.work-showcase {
+  border-bottom: 1px solid #fafafa; }
+
 .work-example {
   color: #fafafa;
   border-top: 1px solid #fafafa;
@@ -1431,8 +1434,7 @@ h3 {
   .work-example .work-services i {
     width: 30px; }
   .work-example.maruma-bg {
-    background: url("../img/work/maruma-bg2.jpg") #d5641c center top no-repeat;
-    min-height: 850px; }
+    background: url("../img/work/maruma-bg2.jpg") #d5641c center top no-repeat; }
     .work-example.maruma-bg p {
       width: 37%; }
     .work-example.maruma-bg .wrap {
@@ -1446,42 +1448,64 @@ h3 {
         .work-example.maruma-bg .wrap {
           padding: 500px 30px 80px 30px; } }
   .work-example.siegel-bg {
-    background: url("../img/work/siegel-bg2.jpg") #3461de center top no-repeat;
-    min-height: 850px; }
-    .work-example.siegel-bg .push-right {
-      width: 48%;
-      float: right; }
-    @media (min-width: 64em) {
-      .work-example.siegel-bg h1 {
-        font-size: 35px; } }
-    @media (min-width: 50em) {
-      .work-example.siegel-bg h1 {
-        font-size: 35px; } }
-    @media (min-width: 37.5em) {
-      .work-example.siegel-bg h1 {
-        font-size: 30px; } }
-    @media (max-width: 37.5em) {
-      .work-example.siegel-bg h1 {
-        font-size: 30px; } }
-    .work-example.siegel-bg .wrap {
-      padding: 7% 30px; }
-    .work-example.siegel-bg p {
-      width: 75%; }
+    background: url("../img/work/siegel-bg2.jpg") #3461de center top no-repeat; }
     .work-example.siegel-bg .browser-image {
       float: left;
       width: 48%; }
-    @media (max-width: 37.5em) {
-      .work-example.siegel-bg {
-        min-height: 300px;
-        background-position: 37% 0px; }
-        .work-example.siegel-bg .push-right {
-          width: 90%;
-          float: none; }
-        .work-example.siegel-bg .browser-image {
-          float: none;
-          width: 100%;
-          margin-bottom: 10%; }
-        .work-example.siegel-bg p {
-          width: 100%; }
-        .work-example.siegel-bg .wrap {
-          padding: 100px 30px 80px 30px; } }
+  .work-example.grischuna-bg {
+    background: url("../img/work/grischuna-bg.jpg") #7b0e1e center top no-repeat; }
+    .work-example.grischuna-bg .browser-image {
+      float: right;
+      width: 48%;
+      position: relative;
+      display: block; }
+      .work-example.grischuna-bg .browser-image img:first-child {
+        width: 100%; }
+      .work-example.grischuna-bg .browser-image img:last-child {
+        width: 45%; }
+    .work-example.grischuna-bg .browser-popout {
+      position: absolute;
+      right: -7%;
+      bottom: -27%; }
+      @media (max-width: 37.5em) {
+        .work-example.grischuna-bg .browser-popout {
+          display: none; } }
+  .work-example.siegel-bg .push-right, .work-example.grischuna-bg .push-right {
+    width: 48%;
+    float: right; }
+  .work-example.siegel-bg .push-left, .work-example.grischuna-bg .push-left {
+    width: 51%;
+    float: left; }
+  @media (min-width: 64em) {
+    .work-example.siegel-bg h1, .work-example.grischuna-bg h1 {
+      font-size: 35px; } }
+  @media (min-width: 50em) {
+    .work-example.siegel-bg h1, .work-example.grischuna-bg h1 {
+      font-size: 35px; } }
+  @media (min-width: 37.5em) {
+    .work-example.siegel-bg h1, .work-example.grischuna-bg h1 {
+      font-size: 30px; } }
+  @media (max-width: 37.5em) {
+    .work-example.siegel-bg h1, .work-example.grischuna-bg h1 {
+      font-size: 30px; } }
+  .work-example.siegel-bg .wrap, .work-example.grischuna-bg .wrap {
+    padding: 7% 30px 9% 30px; }
+  .work-example.siegel-bg p, .work-example.grischuna-bg p {
+    width: 75%; }
+  @media (max-width: 37.5em) {
+    .work-example.siegel-bg, .work-example.grischuna-bg {
+      min-height: 300px;
+      background-position: 37% 0px; }
+      .work-example.siegel-bg .push-right,
+      .work-example.siegel-bg .push-left, .work-example.grischuna-bg .push-right,
+      .work-example.grischuna-bg .push-left {
+        width: 90%;
+        float: none; }
+      .work-example.siegel-bg .browser-image, .work-example.grischuna-bg .browser-image {
+        float: none;
+        width: 100%;
+        margin-bottom: 10%; }
+      .work-example.siegel-bg p, .work-example.grischuna-bg p {
+        width: 100%; }
+      .work-example.siegel-bg .wrap, .work-example.grischuna-bg .wrap {
+        padding: 100px 30px 80px 30px; } }

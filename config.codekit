@@ -1741,6 +1741,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_site\/img\/work\/grischuna-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 640314,
+		"inputAbbreviatedPath": "\/_site\/img\/work\/grischuna-bg.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/work\/grischuna-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/work\/grischuna-browser-popout.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21044,
+		"inputAbbreviatedPath": "\/_site\/img\/work\/grischuna-browser-popout.png",
+		"outputAbbreviatedPath": "\/_site\/img\/work\/grischuna-browser-popout.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/work\/grischuna-browser.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 123365,
+		"inputAbbreviatedPath": "\/_site\/img\/work\/grischuna-browser.png",
+		"outputAbbreviatedPath": "\/_site\/img\/work\/grischuna-browser.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/img\/work\/listorize-teaser.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1759,17 +1792,6 @@
 		"initialSize": 961199,
 		"inputAbbreviatedPath": "\/_site\/img\/work\/maruma-bg.jpg",
 		"outputAbbreviatedPath": "\/_site\/img\/work\/maruma-bg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/work\/maruma-bg.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 902510,
-		"inputAbbreviatedPath": "\/_site\/img\/work\/maruma-bg.png",
-		"outputAbbreviatedPath": "\/_site\/img\/work\/maruma-bg.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3693,6 +3715,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/work\/grischuna-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 581274,
+		"inputAbbreviatedPath": "\/img\/work\/grischuna-bg.jpg",
+		"outputAbbreviatedPath": "\/img\/work\/grischuna-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/work\/grischuna-browser-popout.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21044,
+		"inputAbbreviatedPath": "\/img\/work\/grischuna-browser-popout.png",
+		"outputAbbreviatedPath": "\/img\/work\/grischuna-browser-popout.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/work\/grischuna-browser.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 123365,
+		"inputAbbreviatedPath": "\/img\/work\/grischuna-browser.png",
+		"outputAbbreviatedPath": "\/img\/work\/grischuna-browser.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/work\/listorize-teaser.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3715,17 +3770,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/work\/maruma-bg.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.10455e+06,
-		"inputAbbreviatedPath": "\/img\/work\/maruma-bg.png",
-		"outputAbbreviatedPath": "\/img\/work\/maruma-bg.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
 	"\/img\/work\/maruma-bg2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3735,7 +3779,7 @@
 		"outputAbbreviatedPath": "\/img\/work\/maruma-bg2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/work\/maruma-flyer.jpg": {
 		"fileType": 16384,
@@ -3768,7 +3812,7 @@
 		"outputAbbreviatedPath": "\/img\/work\/siegel-bg2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/work\/siegel-browser.png": {
 		"fileType": 32768,
