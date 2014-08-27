@@ -1516,8 +1516,13 @@ h3 {
   .work-example.transportgruen-bg {
     background: url("../img/work/transportgruen-bg.jpg") #548512 center top no-repeat; }
     .work-example.transportgruen-bg h1 {
-      font: 700 42px/1.2 "Lato", sans-serif;
       margin: 0 0 15px 0; }
+      @media (min-width: 37.5em) {
+        .work-example.transportgruen-bg h1 {
+          font: 700 30px/1.2 "Lato", sans-serif; } }
+      @media (min-width: 50em) {
+        .work-example.transportgruen-bg h1 {
+          font: 700 42px/1.2 "Lato", sans-serif; } }
     @media (max-width: 37.5em) {
       .work-example.transportgruen-bg {
         min-height: 300px;

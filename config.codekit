@@ -1849,6 +1849,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_site\/img\/work\/siegel-webseite.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 269260,
+		"inputAbbreviatedPath": "\/_site\/img\/work\/siegel-webseite.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/work\/siegel-webseite.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/img\/work\/transportgruen-bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1856,6 +1867,17 @@
 		"initialSize": 687449,
 		"inputAbbreviatedPath": "\/_site\/img\/work\/transportgruen-bg.jpg",
 		"outputAbbreviatedPath": "\/_site\/img\/work\/transportgruen-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/work\/transportgruen-flyer.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 336212,
+		"inputAbbreviatedPath": "\/_site\/img\/work\/transportgruen-flyer.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/work\/transportgruen-flyer.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

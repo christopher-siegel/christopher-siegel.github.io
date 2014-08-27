@@ -1236,8 +1236,15 @@ h3 {
         background: url("../img/work/transportgruen-bg.jpg") #548512 center top no-repeat;
         
         h1 {
-            font: 700 42px/1.2 $Lato;
             margin: 0 0 15px 0;
+
+            @include breakpoint(phablet) {
+                font: 700 30px/1.2 $Lato;
+            }
+            
+            @include breakpoint(tablet) {
+                font: 700 42px/1.2 $Lato;
+            }
         }
         
         @include breakpoint(mobile) {
