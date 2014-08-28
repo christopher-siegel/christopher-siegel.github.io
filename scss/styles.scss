@@ -26,10 +26,6 @@ h3 {
     text-align: right;
 
     span {
-        // catchphrase in meta nav
-        // @include column(4);
-        // @include push(8);
-        
         font-size:10px;
         font: 300 12px/50px $Lato;
         margin-right: 15px;
@@ -80,17 +76,11 @@ h3 {
                     padding: 7px 15px;
                     font: 700 20px/105px $Lato;
                     color: $white;
-//                    transition: border 0.4s;
-//                    border-bottom: 3px solid $blue-light;
-//                    border-top: 32px solid $blue-light;
-
+                    
                     &.active,
                     &:hover {
                         text-decoration: none;
-//                        background: $blue-middle;
                         border-bottom: 3px solid $blue-middle;
-//                        border-top: 3px solid $blue-middle;
-//                        transition: border 0.4s;
                     }
                 }
 
@@ -444,11 +434,9 @@ h3 {
 .main-content {
     @include clearfix;
     display: block;
-    // padding: 65px 0;    
 
     .services {
         @include column(12);
-        // margin: 65px 0;
        
         .wrap {
             @include breakpoint(mobile) {
@@ -518,8 +506,6 @@ h3 {
             margin: 0 auto 35px auto;
 
             @include breakpoint(mobile) {
-                // border-radius: 0px;
-                // width: 100%;
 
                 &:hover > .design-orb,
                 &:hover > .code-orb,
@@ -588,7 +574,6 @@ h3 {
         height: 210px;
         width: 100%;
         background: url('../img/city.png') 0% 65%;
-        // background-size: cover;
         position: relative;
 
         @include breakpoint(mobile) {
@@ -606,7 +591,6 @@ h3 {
     padding: 15px 30px;
     color: $white;
     display: inline-block;
-    // position: absolute;
     font: 500 23px/21px $Lato, sans-serif;
     text-align: center;
     transition: color 0.3s, border-color 0.3s, background 0.3s;
