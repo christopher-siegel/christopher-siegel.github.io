@@ -830,6 +830,62 @@ a:visited {
   border-radius: 30px 30px 0 0;
   padding: 35px 35px 0; }
 
+.site-footer {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 0%;
+  padding-bottom: 0px; }
+
+.footer-hero {
+  height: 320px;
+  background: #2d3c50; }
+  .footer-hero .wrap {
+    max-width: 640px; }
+  .footer-hero h4 {
+    margin: 70px 0 50px 0;
+    font: 200 24px "Nunito", sans-serif;
+    color: #fafafa; }
+    @media (max-width: 37.5em) {
+      .footer-hero h4 {
+        margin: 30px 0 30px 0; } }
+  .footer-hero a {
+    margin: 0 25px;
+    min-width: 220px; }
+    @media (max-width: 37.5em) {
+      .footer-hero a {
+        margin: 7px 25px; } }
+
+.footer-links {
+  background: #71adff;
+  padding: 38px 0; }
+  .footer-links .links {
+    display: inline-block;
+    margin: 0 20px;
+    color: #fafafa; }
+    @media (max-width: 37.5em) {
+      .footer-links .links {
+        margin: 0 20px 38px 20px; } }
+    .footer-links .links h5 {
+      color: #2d3c50;
+      font: 400 16px "Nunito", sans-serif;
+      text-transform: uppercase; }
+    .footer-links .links a {
+      color: #fafafa;
+      font: 300 16px "Nunito", sans-serif; }
+    .footer-links .links:last-child {
+      margin-bottom: 0px; }
+  .footer-links .latest-posts {
+    vertical-align: top;
+    float: right; }
+    @media (max-width: 37.5em) {
+      .footer-links .latest-posts {
+        float: none; } }
+
+.footer-bottom {
+  height: 60px;
+  background: #529bff; }
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -1310,59 +1366,6 @@ h3 {
     font: 700 24px/1.2 "Lato", sans-serif;
     color: #2d3c50;
     text-transform: uppercase; }
-
-.site-footer {
-  display: inline;
-  float: left;
-  width: 100%;
-  margin: 0 0%;
-  padding-bottom: 0px; }
-  .site-footer .footer-hero {
-    height: 320px;
-    background: #2d3c50; }
-    .site-footer .footer-hero .wrap {
-      max-width: 640px; }
-    .site-footer .footer-hero h4 {
-      margin: 70px 0 50px 0;
-      font: 200 24px "Nunito", sans-serif;
-      color: #fafafa; }
-      @media (max-width: 37.5em) {
-        .site-footer .footer-hero h4 {
-          margin: 30px 0 30px 0; } }
-    .site-footer .footer-hero a {
-      margin: 0 25px;
-      min-width: 220px; }
-      @media (max-width: 37.5em) {
-        .site-footer .footer-hero a {
-          margin: 7px 25px; } }
-  .site-footer .footer-links {
-    background: #71adff;
-    padding: 38px 0; }
-    .site-footer .footer-links .links {
-      display: inline-block;
-      margin: 0 20px;
-      color: #fafafa; }
-      @media (max-width: 37.5em) {
-        .site-footer .footer-links .links {
-          margin: 0 20px 38px 20px; } }
-      .site-footer .footer-links .links h5 {
-        color: #2d3c50;
-        font: 400 16px "Nunito", sans-serif;
-        text-transform: uppercase; }
-      .site-footer .footer-links .links a {
-        color: #fafafa;
-        font: 300 16px "Nunito", sans-serif; }
-      .site-footer .footer-links .links:last-child {
-        margin-bottom: 0px; }
-    .site-footer .footer-links .latest-posts {
-      vertical-align: top;
-      float: right; }
-      @media (max-width: 37.5em) {
-        .site-footer .footer-links .latest-posts {
-          float: none; } }
-  .site-footer .footer-bottom {
-    height: 60px;
-    background: #529bff; }
 
 @-webkit-keyframes type {
   from {

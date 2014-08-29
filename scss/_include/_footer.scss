@@ -1,0 +1,85 @@
+.site-footer {
+    @include column(12);
+    padding-bottom: 0px;
+}
+
+
+.footer-hero {
+    height: 320px;
+    background: $blue-dark;
+
+    .wrap {
+        max-width: 640px;
+    }
+
+    h4 {
+        margin: 70px 0 50px 0;
+        font: 200 24px $Nunito;
+        color: $white;
+
+        @include breakpoint(mobile) {
+            margin: 30px 0 30px 0;
+        }
+    }
+
+    a {
+        margin: 0 25px;
+        min-width: 220px;
+
+        @include breakpoint(mobile) {
+            margin: 7px 25px;
+        }
+    }
+
+}
+
+.footer-links {
+    // height: 170px;
+    background: $blue-light;
+    padding: 38px 0;
+
+
+
+    .links {
+        display: inline-block;
+        margin: 0 20px;
+        color: $white;
+
+        @include breakpoint(mobile) {
+            margin: 0 20px 38px 20px;
+        }
+
+        h5 {
+            color: $blue-dark;
+            font: 400 16px $Nunito;
+            text-transform: uppercase;
+        }
+
+        a {
+            color: $white;
+            font: 300 16px $Nunito;
+        }
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    .latest-posts {
+        vertical-align: top;
+        float: right;
+
+        @include breakpoint(mobile) {
+            float: none;
+        }
+    }
+
+}
+
+.footer-bottom {
+    height: 60px;
+    background: $blue-middle;
+}
+
+
+
