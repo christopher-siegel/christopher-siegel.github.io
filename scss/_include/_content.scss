@@ -71,17 +71,6 @@
         border-radius: 122px;
         padding: 9px;
         margin: 0 auto 35px auto;
-
-        @include breakpoint(mobile) {
-
-            &:hover > .design-orb,
-            &:hover > .code-orb,
-            &:hover > .advance-orb, {
-                transition: all 0.3s;
-                border-radius: 0px;
-                width: 100%;
-            }
-        }
     }
 
     .design-orb-border {
