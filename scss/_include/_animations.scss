@@ -1,0 +1,82 @@
+
+@-webkit-keyframes type {
+    from { width: 0px; }
+    to { width:335px; }
+}
+
+@-moz-keyframes type {
+    from { width: 0; }
+    to { width:335px; }
+}
+
+@keyframes type {
+    from { width: 0; }
+    to { width:335px; }
+}
+
+@-webkit-keyframes type-last {
+    from { width: 0px; }
+    to { width:246px; }
+}
+
+@-moz-keyframes type-last {
+    from { width: 0; }
+    to { width:246px; }
+}
+
+@keyframes type-last {
+    from { width: 0; }
+    to { width:246px; }
+}
+
+@-webkit-keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+
+@include breakpoint(mobile) {
+    .hide-mobile {
+        display: none;
+    }
+
+    @-webkit-keyframes type {
+        from { width: 0px; }
+        to { width:235px; }
+    }
+
+    @-moz-keyframes type {
+        from { width: 0; }
+        to { width:235px; }
+    }
+
+    @keyframes type {
+        from { width: 0; }
+        to { width:235px; }
+    }
+
+    @-webkit-keyframes type-last {
+        from { width: 0px; }
+        to { width:150px; }
+    }
+
+    @-moz-keyframes type-last {
+        from { width: 0; }
+        to { width:150px; }
+    }
+
+    @keyframes type-last {
+        from { width: 0; }
+        to { width:150px; }
+    }
+}
