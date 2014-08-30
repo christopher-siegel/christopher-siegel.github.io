@@ -3,13 +3,12 @@
 @import 'mixins';
 @import 'variables';
 @import 'jekyll';
+@import '_include/_animations';
 @import '_include/_display';
 @import '_include/_content';
 @import '_include/_slider';
 @import '_include/_footer';
 
-
 @import 'styles';
 
 @import '_include/_work';
-@import '_include/_animations';
