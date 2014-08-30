@@ -64,6 +64,8 @@ h3 {
 
 .main-nav {
     text-align: right;
+    max-height: 105px;
+    overflow: hidden;
 
     ul,
     li {
