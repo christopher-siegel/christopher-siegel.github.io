@@ -5,10 +5,11 @@ date:   2015-02-24 19:32:03
 categories: laravel
 ---
 
-[![Laravel 5 - Love beautiful code? We do too!](http://www.onlinewerk.info/wp-content/uploads/2015/02/Bildschirmfoto-2015-02-07-um-18.16.14-611x313.png)](http://www.onlinewerk.info/wp-content/uploads/2015/02/Bildschirmfoto-2015-02-07-um-18.16.14.png)
-
-
 Laravel hat sich seit dem ersten Release 2011 zum mittlerweile [beliebtesten PHP Framework](//www.sitepoint.com/best-php-frameworks-2014/) der Welt entwickelt. Von vielen wird Laravel die Rettung von PHP genannt. Mit einer unglaublich guten Dokumentation, einer einfachen und übersichtlichen Code-Struktur und jeder Menge Features überrannte Laravel die PHP-Community im Sturm. Nach mehreren verschobenen Release-Terminen wurde am 4\. Februar 2015 die aktuelle Version 5 von Laravel veröffentlicht.
+
+
+
+[![Laravel 5 - Love beautiful code? We do too!](http://www.onlinewerk.info/wp-content/uploads/2015/02/Bildschirmfoto-2015-02-07-um-18.16.14-611x313.png)](http://www.onlinewerk.info/wp-content/uploads/2015/02/Bildschirmfoto-2015-02-07-um-18.16.14.png)
 
 > Some years ago I was ashamed to say I was a PHP developer, today I can't be more proud. Thank you [@laravelphp](https://twitter.com/laravelphp) [pic.twitter.com/1TioslbdCz](http://t.co/1TioslbdCz) — Duilio Palacios (@Sileence) [February 4, 2015](https://twitter.com/Sileence/status/562998276879044611)
 

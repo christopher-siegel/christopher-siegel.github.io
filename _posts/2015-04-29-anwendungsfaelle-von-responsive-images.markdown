@@ -5,7 +5,10 @@ date:   2015-04-29 8:50:10
 categories: responsive
 ---
 
-Echte responsive Images – in purem HTML und ohne Hacks – finden immer häufiger Benutzung auf Webseiten. Die Geschichte des &lt;picture&gt; Elements wurde bereits in "Der lange Weg zu Responsive Images" beschrieben, in diesem Artikel soll es um die konkrete Anwendung von Responsive Images gehen. Doch das neue &lt;picture&gt; Element und das neue src-set Attribut können für eine ganze Reihe verschiedener Anwendungsfälle benutzt werden. Nicht immer ist das neue &lt;picture&gt; Element überhaupt nötig. Im folgenden Artikel werden verschiedene Anwendungsfälle beispielhaft erklärt. Für die Auswahl der korrekten Vorgehensweise, muss zunächst der Anwendungsfall genauer bestimmt werden. Es gibt vier mögliche Anwendungsfälle der neuen Syntax:
+Echte responsive Images – in purem HTML und ohne Hacks – finden immer häufiger Benutzung auf Webseiten. Die Geschichte des &lt;picture&gt; Elements wurde bereits in "Der lange Weg zu Responsive Images" beschrieben, in diesem Artikel soll es um die konkrete Anwendung von Responsive Images gehen. 
+
+
+Doch das neue &lt;picture&gt; Element und das neue src-set Attribut können für eine ganze Reihe verschiedener Anwendungsfälle benutzt werden. Nicht immer ist das neue &lt;picture&gt; Element überhaupt nötig. Im folgenden Artikel werden verschiedene Anwendungsfälle beispielhaft erklärt. Für die Auswahl der korrekten Vorgehensweise, muss zunächst der Anwendungsfall genauer bestimmt werden. Es gibt vier mögliche Anwendungsfälle der neuen Syntax:
 
 *   Veränderung der Bild**größe** anhand von Regeln
 *   Optimierung für Displays mit vielen **DPI** (Neudeutsch: Retina)
