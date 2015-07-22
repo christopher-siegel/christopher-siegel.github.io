@@ -42,12 +42,8 @@
 
     .links {
         display: inline-block;
-        margin: 0 20px;
+        margin: 20px 20px;
         color: $white;
-
-        @include breakpoint(mobile) {
-            margin: 0 20px 38px 20px;
-        }
 
         h5 {
             color: $blue-dark;
