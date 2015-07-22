@@ -69,12 +69,12 @@
         vertical-align: top;
         float: right;
 
-        @include breakpoint(mobile) {
+        @include breakpoint(phablet) {
             float: none;
             margin: 0px 20px 0px 20px;
         }
 
-        @include breakpoint(phablet) {
+        @include breakpoint(tablet) {
             float: right;
             margin: 0px 20px 0px 20px;
         }
