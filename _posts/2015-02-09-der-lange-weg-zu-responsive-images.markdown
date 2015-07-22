@@ -38,3 +38,5 @@ Die IndieGoGo Kampagne für Responsive Images.
 
 
 Die Entwicklergemeinschaft wünschte sich so sehr eine Lösung für das „Responsive Image Problem“, dass es durch diesen langen und holprigen Weg heute ein &lt;picture&gt; Element gibt. Chrome 38 (auch für Android) sowie Opera 25 unterstützen bereits jetzt das &lt;picture&gt; Element. Firefox 34+ enthält es zwar auch, jedoch ist es standardmäßig ausgeschaltet und muss zunächst aktiviert werden. Apple und Microsoft haben bereits angekündigt, dass sie über eine baldige Implementierung nachdenken.
+
+Auch veröffentlicht unter: [onlinewerk.info](http://www.onlinewerk.info/2015/02/der-weg-zu-responsive-images/)

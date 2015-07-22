@@ -144,3 +144,5 @@ $user->getAvatar();</pre>
 ## **Fazit**
 
 Beim aktuellen major release von Laravel hat sich mal wieder einiges getan und in diesem Artikel wurde auch nur ein kleiner Teil der Neuerungen vorgestellt. Weitere tolle Features wie Elixir, Middlewares und Schedulers können der umfassenden Dokumentation entnommen werden. Auf Laracasts (Lernplattform für PHP und Laravel) gibt es mehrere kostenlose Video-Serien zu Laravel 5\. [Laravel 5 Fundamentals](https://laracasts.com/series/laravel-5-fundamentals) und [What's New in Laravel 5.0 (Alpha)](https://laracasts.com/series/whats-new-in-laravel-5/episodes/3) sind sehr zu empfehlen.
+
+Auch veröffentlicht unter: [onlinewerk.info](http://www.onlinewerk.info/2015/02/laravel-5-php-framework-fuer-web-kuenstler/)

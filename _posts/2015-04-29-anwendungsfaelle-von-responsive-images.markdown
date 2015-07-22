@@ -137,3 +137,6 @@ Durch Kombination aller Methoden, lassen sich sehr komplexe Anwendungsfälle bew
 ## Fazit
 
 Wie man sieht, gibt es jede Menge verschiedene Anwendungsfälle für Responsive Images. Dabei ist für den bekanntesten Anwendungsfall, das Ändern der Bildgröße, nicht einmal ein &lt;picture&gt; Element nötig. Durch Angabe mehrerer MIME-Types lassen sich moderne Bildformate wie SVG und WebP einfach verwenden, ohne ältere Browser auszuschließen. &lt;picture&gt; und srcset bieten viele Möglichkeiten und zunehmende Browserunterstützung. [Bereits 40%](http://caniuse.com/#search=picture "Bereits 40%") der weltweiten Internetbenutzer haben einen Browser der das &lt;picture&gt; Element unterstützt. Bei [srcset sind es 49%](http://caniuse.com/#search=srcset "srcset sind es 49%").   Kostenloses Stockphoto von [gratisography](http://www.gratisography.com/ "gratisography").
+
+
+Auch veröffentlicht unter: [onlinewerk.info](http://www.onlinewerk.info/2015/04/anwendungsfaelle-von-responsive-images/)
