@@ -5,7 +5,7 @@ date:   2015-04-29 8:50:10
 categories: responsive
 ---
 
-Echte responsive Images – in purem HTML und ohne Hacks – finden immer häufiger Benutzung auf Webseiten. Die Geschichte des &lt;pictur&gt; Elements wurde bereits in "Der lange Weg zu Responsive Images" beschrieben, in diesem Artikel soll es um die konkrete Anwendung von Responsive Images gehen. Doch das neue &lt;pictur&gt; Element und das neue src-set Attribut können für eine ganze Reihe verschiedener Anwendungsfälle benutzt werden. Nicht immer ist das neue &lt;pictur&gt; Element überhaupt nötig. Im folgenden Artikel werden verschiedene Anwendungsfälle beispielhaft erklärt. Für die Auswahl der korrekten Vorgehensweise, muss zunächst der Anwendungsfall genauer bestimmt werden. Es gibt vier mögliche Anwendungsfälle der neuen Syntax:
+Echte responsive Images – in purem HTML und ohne Hacks – finden immer häufiger Benutzung auf Webseiten. Die Geschichte des &lt;picture&gt; Elements wurde bereits in "Der lange Weg zu Responsive Images" beschrieben, in diesem Artikel soll es um die konkrete Anwendung von Responsive Images gehen. Doch das neue &lt;picture&gt; Element und das neue src-set Attribut können für eine ganze Reihe verschiedener Anwendungsfälle benutzt werden. Nicht immer ist das neue &lt;picture&gt; Element überhaupt nötig. Im folgenden Artikel werden verschiedene Anwendungsfälle beispielhaft erklärt. Für die Auswahl der korrekten Vorgehensweise, muss zunächst der Anwendungsfall genauer bestimmt werden. Es gibt vier mögliche Anwendungsfälle der neuen Syntax:
 
 *   Veränderung der Bild**größe** anhand von Regeln
 *   Optimierung für Displays mit vielen **DPI** (Neudeutsch: Retina)
@@ -85,7 +85,7 @@ Für Browser-Fenster mit einer Breite von 640 CSS Pixel oder mehr, läd ein Bild
 
 ## Kombination aller Anwendungsfälle
 
-Alle der Aufgeführten Beispiele lassen sich beliebig kombinieren. Dabei spielt die Reihenfolge der Bedingungen und Bildquellen eine Rolle, denn der Browser nimmt automatisch den ersten Media-Query der zutrifft. Ein Extrembeispiel ist die Kombination aller vier Möglichkeiten: **Ändern der Bildgröße, DPI, Inhalte und MIME-Typen in einem &lt;pictur&gt; Element**
+Alle der Aufgeführten Beispiele lassen sich beliebig kombinieren. Dabei spielt die Reihenfolge der Bedingungen und Bildquellen eine Rolle, denn der Browser nimmt automatisch den ersten Media-Query der zutrifft. Ein Extrembeispiel ist die Kombination aller vier Möglichkeiten: **Ändern der Bildgröße, DPI, Inhalte und MIME-Typen in einem &lt;picture&gt; Element**
 
 <pre><picture>
     <source
@@ -136,4 +136,4 @@ Durch Kombination aller Methoden, lassen sich sehr komplexe Anwendungsfälle bew
 
 ## Fazit
 
-Wie man sieht, gibt es jede Menge verschiedene Anwendungsfälle für Responsive Images. Dabei ist für den bekanntesten Anwendungsfall, das Ändern der Bildgröße, nicht einmal ein &lt;pictur&gt; Element nötig. Durch Angabe mehrerer MIME-Types lassen sich moderne Bildformate wie SVG und WebP einfach verwenden, ohne ältere Browser auszuschließen. &lt;pictur&gt; und srcset bieten viele Möglichkeiten und zunehmende Browserunterstützung. [Bereits 40%](http://caniuse.com/#search=picture "Bereits 40%") der weltweiten Internetbenutzer haben einen Browser der das &lt;pictur&gt; Element unterstützt. Bei [srcset sind es 49%](http://caniuse.com/#search=srcset "srcset sind es 49%").   Kostenloses Stockphoto von [gratisography](http://www.gratisography.com/ "gratisography").
+Wie man sieht, gibt es jede Menge verschiedene Anwendungsfälle für Responsive Images. Dabei ist für den bekanntesten Anwendungsfall, das Ändern der Bildgröße, nicht einmal ein &lt;picture&gt; Element nötig. Durch Angabe mehrerer MIME-Types lassen sich moderne Bildformate wie SVG und WebP einfach verwenden, ohne ältere Browser auszuschließen. &lt;picture&gt; und srcset bieten viele Möglichkeiten und zunehmende Browserunterstützung. [Bereits 40%](http://caniuse.com/#search=picture "Bereits 40%") der weltweiten Internetbenutzer haben einen Browser der das &lt;picture&gt; Element unterstützt. Bei [srcset sind es 49%](http://caniuse.com/#search=srcset "srcset sind es 49%").   Kostenloses Stockphoto von [gratisography](http://www.gratisography.com/ "gratisography").
