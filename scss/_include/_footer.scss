@@ -67,17 +67,8 @@
 
     .latest-posts {
         vertical-align: top;
-        float: right;
-
-        @include breakpoint(phone) {
-            float: none;
-            margin: 0px 20px 0px 20px;
-        }
-
-        @include breakpoint(phablet) {
-            float: none;
-            margin: 0px 20px 0px 20px;
-        }
+        float: none;
+        margin: 38px 20px 0px 20px;
 
         @include breakpoint(tablet) {
             float: right;
