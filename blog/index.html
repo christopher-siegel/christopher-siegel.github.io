@@ -18,7 +18,7 @@ permalink: /blog/
     <div class="blog-post highlighted-nope">
         <div class="wrap"> 
                 <h2>{{ post.title }}</h2>
-                {{post.excerpt | strip_html | truncatewords:30}}
+                <p>{{post.excerpt | strip_html | truncatewords:30}}</p>
         </div>
     </div>
 </a>
