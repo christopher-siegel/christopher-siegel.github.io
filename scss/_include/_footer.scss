@@ -68,11 +68,10 @@
     .latest-podsts {
         vertical-align: top;
         float: none;
-        margin: 38px 20px 0px 20px;
+        margin: 20px 20px 20px 20px;
 
         @include breakpoint(tablet) {
             float: right;
-            margin: 0px 20px 0px 20px;
         }
 
     }
