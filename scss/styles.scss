@@ -40,7 +40,7 @@ h3 {
 
 .logo,
 .logo a {
-    font: 32px $AdelleBasic;
+    font-size: 32px;
     color: $white;
     line-height: 105px;
     text-decoration: none;
@@ -95,7 +95,7 @@ h3 {
     text-align: center;
     
     h1 {
-        font: 49px $AdelleBasic;
+        font: 49px "adelle",serif;
         color: $blue-dark;
     }
 }
