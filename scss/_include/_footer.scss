@@ -73,6 +73,11 @@
             float: none;
             margin: 38px 20px 0px 20px;
         }
+
+        @include breakpoint(mobile) {
+            float: none;
+            margin: 0px 20px 0px 20px;
+        }
     }
 
 }
