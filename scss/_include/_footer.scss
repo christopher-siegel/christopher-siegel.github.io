@@ -68,7 +68,11 @@
     .latest-posts {
         vertical-align: top;
         float: right;
-        margin: 0 20px;
+
+        @include breakpoint(desktop) {
+            float: right;
+            margin: 0px 20px 0px 20px;
+        }
 
         @include breakpoint(tablet) {
             float: none;
