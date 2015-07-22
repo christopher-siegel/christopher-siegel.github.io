@@ -134,6 +134,22 @@ h3 {
 }
 
 
+.post {
+    width: 50%;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
+
+    @include breakpoint(phablet) {
+        width: 90%;
+    }
+
+    @include breakpoint(desktop) {
+        width: 50%;
+    }
+}
+
 .btn,
 .btn:visited {
     min-height: 60px;
