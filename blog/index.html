@@ -1,6 +1,7 @@
 ---
 layout: default
 title: blog | Christopher Siegel
+navtitle: blog
 sort: 4
 permalink: /blog/
 ---
@@ -17,7 +18,7 @@ permalink: /blog/
     <div class="blog-post highlighted-nope">
         <div class="wrap"> 
                 <h2>{{ post.title }}</h2>
-                {{post.excerpt}}
+                {{post.excerpt | strip_html | truncatewords:30}}
         </div>
     </div>
 </a>

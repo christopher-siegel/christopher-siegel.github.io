@@ -18,9 +18,9 @@
                     {% for node in sorted_pages %}
                         {% if node.layout != 'none' and node.sort %}
                             {% if page.url == node.url %}
-                                <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+                                <li class="active"><a href="{{node.url}}" class="active">{{node.navtitle}}</a></li>
                             {% else %}
-                                <li><a href="{{node.url}}">{{node.title}}</a></li>
+                                <li><a href="{{node.url}}">{{node.navtitle}}</a></li>
                             {% endif %}
                         {% endif %}
                     {% endfor %}
