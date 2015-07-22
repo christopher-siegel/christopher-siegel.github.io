@@ -45,7 +45,7 @@ Durch dieses Beispiel zeigen Browser die SVGs unterstützen die SVG-Version des 
          srcset="baum@2x.jpg 2x, baum@3x.jpg 3x">
 </pre>
 
-Dieses Beispiel zeigt wie mit einem einzelnen <img> Element drei verschiedene Situationen abgefangen warden können. Je nachdem wie hochauflösend das Display ist (2x oder 3x Pixelanzahl), wird ein unterschiedlich hochauflösendes Bild geladen. [caption id="attachment_3893" align="alignnone" width="600"][![*billiger Photoshop unschärfe Effekt um Retina zu simulieren*](http://www.onlinewerk.info/wp-content/uploads/2015/02/retina.jpg)](http://www.onlinewerk.info/wp-content/uploads/2015/02/retina.jpg) *billiger Photoshop unschärfe Effekt um Retina zu simulieren*[/caption] Letztendlich hat jedoch der Browser auch noch ein Mitspracherecht. Hat das Gerät beispielsweise eine 2.5x Auflösung, wird der Browser entscheiden ob das 2x oder 3x besser geeignet ist (anhand der Internetverbindung und anderen Faktoren).  
+Dieses Beispiel zeigt wie mit einem einzelnen <img> Element drei verschiedene Situationen abgefangen warden können. Je nachdem wie hochauflösend das Display ist (2x oder 3x Pixelanzahl), wird ein unterschiedlich hochauflösendes Bild geladen. (http://www.onlinewerk.info/wp-content/uploads/2015/02/retina.jpg)](http://www.onlinewerk.info/wp-content/uploads/2015/02/retina.jpg) *billiger Photoshop unschärfe Effekt um Retina zu simulieren*[/caption] Letztendlich hat jedoch der Browser auch noch ein Mitspracherecht. Hat das Gerät beispielsweise eine 2.5x Auflösung, wird der Browser entscheiden ob das 2x oder 3x besser geeignet ist (anhand der Internetverbindung und anderen Faktoren).  
 
 ## Bildgröße ändern
 
