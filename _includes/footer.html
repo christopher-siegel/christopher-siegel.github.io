@@ -72,7 +72,7 @@
                 <div class="latest-posts links">
                     <h5>Latest posts</h5>
                     {% for post in site.posts limit:3 %}
-                        <a href="{{post.url}}">{{ post.title }}</a><br/>
+                        <a href="{{post.url}}">{{ post.title | truncate:30}}</a><br/>
                     {% endfor %}
                 </div>
             </div>
